@@ -5,14 +5,19 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         GumballVendingMachine gumballVendingMachine= new GumballVendingMachine();
-        gumballVendingMachine.addUserMoneyInput(GumballVendingMachine.validCurrency.QUARTER);
+        gumballVendingMachine.addUserMoneyInput(GumballVendingMachine.validCurrency.DIME);
 
-
-        System.out.println(gumballVendingMachine.dispense(GumballVendingMachine.color.RED).getGumballColor());
+        System.out.println(gumballVendingMachine.dispenseRedGumballLever());
         System.out.println(gumballVendingMachine.returnMyChange());
-        System.out.println(gumballVendingMachine.dispense(GumballVendingMachine.color.RED).getGumballColor());
+        System.out.println(gumballVendingMachine.dispenseYellowGumballLever());
         System.out.println(gumballVendingMachine.returnMyChange());
-        System.out.println(gumballVendingMachine.dispense(GumballVendingMachine.color.RED).getGumballColor());
+        System.out.println(gumballVendingMachine.dispenseYellowGumballLever());
+        System.out.println(gumballVendingMachine.returnMyChange());
+        System.out.println(gumballVendingMachine.dispenseRedGumballLever());
+        System.out.println(gumballVendingMachine.returnMyChange());
+        System.out.println(gumballVendingMachine.dispenseRedGumballLever());
+        System.out.println(gumballVendingMachine.returnMyChange());
+        System.out.println(gumballVendingMachine.dispenseYellowGumballLever());
         System.out.println(gumballVendingMachine.returnMyChange());
     }
 }

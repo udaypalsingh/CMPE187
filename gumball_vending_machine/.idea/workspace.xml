@@ -19,6 +19,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunDashboard">
@@ -61,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582090463201</updated>
       <workItem from="1582090464835" duration="5474000" />
+      <workItem from="1582324891292" duration="6177000" />
     </task>
     <servers />
   </component>
