@@ -26,7 +26,7 @@ public class Gumball {
      * Enum currency ensures that the money acceptable of the gumball would be either NICKLE, DIME, or QUARTER
      */
     public enum currency{
-        NICKLE(0.05), DIME(0.10), QUARTER(0.25);
+        NONE(0),NICKLE(0.05), DIME(0.10), QUARTER(0.25);
 
         currency(double v) {
             value = v;

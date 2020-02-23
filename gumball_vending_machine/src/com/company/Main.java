@@ -6,7 +6,7 @@ public class Main {
 	// write your code here
         GumballVendingMachine gumballVendingMachine= new GumballVendingMachine();
         gumballVendingMachine.addUserMoneyInput(GumballVendingMachine.validCurrency.DIME);
-
+        
         System.out.println(gumballVendingMachine.dispenseRedGumballLever());
         System.out.println(gumballVendingMachine.returnMyChange());
         System.out.println(gumballVendingMachine.dispenseYellowGumballLever());
