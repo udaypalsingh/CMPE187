@@ -40,7 +40,7 @@ public class Student {
 	 *  3. Student has worked part time for at least 6 months in the relevant field of study (Go to criteria 5 if false).
 	 *  4. Parents of the student have paid California state tax for at least 1 year in their lifetime.
 	 *  5. Has volunteered for a cause and has valid proof of it.
-	 *  6. Has household income less than $5000 per annum then one need not satisfy critera 3 and he will be redirected to "Dean for consideration".
+	 *  6. Has household income less than $5000 per annum then one need not satisfy criteria 3 and he will be redirected to "Dean for consideration".
 	 * @return the eligibility of this student
 	 */
 	public String ScholarshipEligibility() {
@@ -67,9 +67,8 @@ public class Student {
 				}
 			case 3:
 				if (partTimeDuration>=6) {
-					i=4;
-					case3Check = true;
-					break;
+					solved = true;
+					return "1";
 				}
 				else {
 					i=5;
@@ -77,7 +76,7 @@ public class Student {
 				}
 			case 4:
 				if(parentsStateTax) {
-					i=5;
+					i=3;
 					break;
 				}
 				else {
@@ -86,19 +85,15 @@ public class Student {
 				}
 			case 5:
 				if(volunteered) {
-					i=6;
-					break;
-				}
-				else {
-					solved = true;
-					return "0";
-				}
-			case 6:
-				if(case3Check) {
 					solved = true;
 					return "1";
 				}
-				else if (householdIncome<5000) {
+				else {
+					i=6;
+					break;
+				}
+			case 6:
+				if (householdIncome<5000) {
 					solved = true;
 					return "Dean for consideration";
 				}

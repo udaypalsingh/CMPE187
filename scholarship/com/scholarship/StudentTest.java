@@ -8,8 +8,8 @@ class StudentTest {
 
 	@Test
 	void test() {
-		Student a = new Student(18,2,6,true,true,100000);
-		assertEquals(a.ScholarshipEligibility(),"1");
+		Student a = new Student(17,0,1,false,false,5000);
+		assertEquals(a.ScholarshipEligibility(),"0");
 	}
 
 }
