@@ -9,14 +9,13 @@ public class NextDate {
 
     /**
      *Ctor for NextDay
-     * @param month is an int value of month
-     * @param day is an int value of day
-     * @param year is an int value of year
+     * @param date is String in MM/DD/YYYY format
      */
-    public NextDate(int month, int day, int year) {
-        this.month = month;
-        this.day = day;
-        this.year = year;
+    public NextDate(String date) {
+        String[] values = date.split("/");
+        this.month = Integer.parseInt(values[0]);
+        this.day = Integer.parseInt(values[1]);
+        this.year = Integer.parseInt(values[2]);
     }
 
 
@@ -80,7 +79,7 @@ public class NextDate {
 
 
     public static void main(String []args){
-        NextDate date = new NextDate(2,28,2010);
+        NextDate date = new NextDate("2/28/2016");
         System.out.println(date.nextDate());
     }
 }
