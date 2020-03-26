@@ -28,7 +28,7 @@ public class NextDate {
         int noOfDaysInMonth = 0;
 
         //if month, day, or year is not within the domain then prints error
-        if (month > 12 || month < 1 || day > 31 || day < 1 || year > 2099 || year < 1900) {
+        if (month > 12 || month < 1 || day > 31 || day < 1 || year >= 2099 || year <= 1900) {
             return "Invalid Input";
         }
 
