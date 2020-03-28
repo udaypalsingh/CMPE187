@@ -77,7 +77,7 @@ public class NextDate {
         else{
             return "Invalid Input";
         }
-        return (month + "/" + day + "/" + year);
+        return (String.format("%02d", month) + "/" + String.format("%02d", day) + "/" + year);
     }
 
 
