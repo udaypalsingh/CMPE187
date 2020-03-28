@@ -1,3 +1,6 @@
+package src;
+
+import java.util.Random; 
 /**
  * Program for getting next day's date
  */
@@ -79,7 +82,24 @@ public class NextDate {
 
 
     public static void main(String []args){
-        NextDate date = new NextDate("2/28/2016");
+    	String randDate = randDate();
+        NextDate date = new NextDate(randDate);
+        System.out.println(randDate);
         System.out.println(date.nextDate());
     }
+    
+    public static String randDate() {
+    	Random rand = new Random();
+    	int dayR = rand.nextInt(31)+1;
+    	int monthR = rand.nextInt(12)+1;
+    	int yearR = rand.nextInt(200)+1900;
+    	return String.format("%02d", monthR)+ "/"+String.format("%02d", dayR)+"/"+yearR;
+    }
+    
 }
+
+
+
+
+
+
